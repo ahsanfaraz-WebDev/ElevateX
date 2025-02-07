@@ -11,8 +11,7 @@
  * https://www.sanity.io/docs/sanity-typegen
  * ---------------------------------------------------------------------------------
  */
-// sanity/schemaTypes.ts
-import 'server-only'; // Add this at the top
+
 // Source: schema.json
 export type SanityImagePaletteSwatch = {
   _type: "sanity.imagePaletteSwatch";

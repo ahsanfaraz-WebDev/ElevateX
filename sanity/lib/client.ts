@@ -1,5 +1,3 @@
-// sanity/schemaTypes.ts
-import "server-only"; // Add this at the top
 
 import { createClient } from "next-sanity";
 
