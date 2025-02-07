@@ -1,3 +1,6 @@
+// sanity/schemaTypes.ts
+import 'server-only'; // Add this at the top
+
 export const apiVersion =
   process.env.NEXT_PUBLIC_SANITY_API_VERSION || '2025-02-05'
 

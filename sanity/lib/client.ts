@@ -1,10 +1,13 @@
-import { createClient } from 'next-sanity'
+// sanity/schemaTypes.ts
+import "server-only"; // Add this at the top
 
-import { apiVersion, dataset, projectId } from '../env'
+import { createClient } from "next-sanity";
+
+import { apiVersion, dataset, projectId } from "../env";
 
 export const client = createClient({
   projectId,
   dataset,
   apiVersion,
   useCdn: false, // Set to false if statically generating pages, using ISR or tag-based revalidation
-})
+});

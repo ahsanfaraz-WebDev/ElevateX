@@ -1,4 +1,5 @@
-
+// sanity/schemaTypes.ts
+import 'server-only'; // Add this at the top
 /**
  * This configuration is used to for the Sanity Studio that’s mounted on the `\app\studio\[[...tool]]\page.tsx` route
  */

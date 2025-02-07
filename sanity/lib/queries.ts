@@ -1,3 +1,6 @@
+// sanity/schemaTypes.ts
+import 'server-only'; // Add this at the top
+
 import { defineQuery } from "next-sanity";
 
 export const STARTUPS_QUERY =
