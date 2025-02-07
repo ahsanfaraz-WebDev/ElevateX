@@ -4,9 +4,12 @@
 /**
  * This configuration is used to for the Sanity Studio that’s mounted on the `\app\studio\[[...tool]]\page.tsx` route
  */
-
-import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
+import {deskTool} from 'sanity/desk'
+// Import using ES module syntax
+import * as icons from 'lucide-react'
+import {visionTool} from '@sanity/vision'
+
 import {structureTool} from 'sanity/structure'
  // Use ESM import
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
@@ -26,6 +29,10 @@ export default defineConfig({
     // Vision is for querying with GROQ from inside the Studio
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({defaultApiVersion: apiVersion}),
+    deskTool({
+      // Use dynamic import if needed
+      icon: icons.LayoutDashboard
+    }),
     markdownSchema(),
 
   ],
